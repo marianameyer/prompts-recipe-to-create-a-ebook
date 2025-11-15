@@ -1,0 +1,19 @@
+Olá, Gemini! Vamos montar um e-book conciso, com conceitos chave e definição de vários tipos diferentes de ameaças de segurança cibernética. Para isso, o e-book deverá conter no máximo 10 páginas e deve seguir a estrutura a seguir:
+
+- [INTRODUÇÃO];
+- [SUMÁRIO];
+- [TEMAS];
+- [FINALIZAÇÃO].
+
+[REGRAS]
+- O texto deve ser conciso e interessante;
+- Use termos simples;
+- no bloco [INTRODUÇÃO] faça uma breve introdução do porquê esse ebook é essencial para um analista de cybersegurança/soc júnior;
+- no bloco [SUMÁRIO] substitua por um sumário dos temas abordados;
+- no bloco [TEMAS] substitua por tipos diferentes de ameaças de segurança cibernética. Para cada ameaça, defina o que é, como ocorre, principais prejuízos e formas de mitigar ou prevenir o ataque. Cite ao menos 10 temas diferentes. A saída deverá ser em forma de texto ou tópicos;
+- no bloco [FINALIZAÇÃO] faça um breve encerramento do ebook, incentivando o leitor a buscar mais informações.
+
+[REGRAS NEGATIVAS]
+- Não use termos complexos;
+- Não cite referências no texto;
+- Não use muitos termos em inglês;
