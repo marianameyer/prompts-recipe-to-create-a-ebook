@@ -1,0 +1,163 @@
+## 📖 Guia Essencial de Ameaças Cibernéticas para Analistas Júniores
+
+### [Página 1]
+
+---
+
+## [INTRODUÇÃO] 🛡️
+
+Bem-vindo(a) ao seu **guia de bolso** sobre ciberameaças!
+
+Se você está começando como **Analista de Segurança Cibernética** (ou em um **SOC - Security Operations Center**), este e-book é **essencial**. Por quê?
+
+1.  **Visão Geral Rápida:** O mundo das ameaças muda rápido. Você precisa de definições **claras e diretas** das táticas mais comuns que verá em campo para agir rápido.
+2.  **Linguagem Comum:** Usamos termos **simples** para que você possa entender e explicar os riscos sem complicação.
+3.  **Resposta e Mitigação:** Além de saber *o que* é o ataque, você aprenderá *o que fazer* para se proteger. Entender a ameaça e a **medida de proteção** é o que transforma um alerta em uma **ação eficaz**.
+
+Seu primeiro passo para proteger sistemas é saber exatamente contra o que você está lutando e como erguer as defesas. Vamos começar!
+
+---
+
+### [Página 2]
+
+## [SUMÁRIO] 📋
+
+| Cap. | Tema | Página Estimada |
+| :--- | :--- | :--- |
+| **1.** | Phishing (Pescaria Digital) | 3 |
+| **2.** | Ransomware (Sequestro de Dados) | 4 |
+| **3.** | Malware Genérico (Software Malicioso) | 5 |
+| **4.** | DDoS (Negação de Serviço Distribuída) | 5 |
+| **5.** | Engenharia Social | 6 |
+| **6.** | Injeção SQL | 6 |
+| **7.** | Ataque de Senha (Força Bruta) | 7 |
+| **8.** | Man-in-the-Middle (Homem no Meio) | 7 |
+| **9.** | Zero-Day (Dia Zero) | 8 |
+| **10.**| Spyware (Programa Espião) | 8 |
+| **11.**| Cross-Site Scripting (XSS) | 9 |
+
+---
+
+### [Página 3]
+
+## [TEMAS] - Tipos de Ameaças e Defesas 🚨
+
+### 1. Phishing (Pescaria Digital)
+
+* **O que é:** Tentativa de **fraudar** o usuário, fazendo-o acreditar que está interagindo com uma entidade legítima (como seu banco ou um serviço conhecido) para **roubar suas credenciais**.
+* **Como ocorre:** Através de e-mails, mensagens ou sites **falsos** que parecem autênticos. Eles pedem para você clicar em um link ou preencher um formulário com seus dados.
+* **Prejuízos:** Roubo de contas (e-mail, bancárias), perdas financeiras e roubo de identidade.
+* **Mitigação:** **Treinamento** constante de usuários; Usar **autenticação de múltiplos fatores** (2FA); Analisar o **endereço de e-mail** e o endereço do site (URL) com atenção.
+
+---
+
+### [Página 4]
+
+### 2. Ransomware (Sequestro de Dados)
+
+* **O que é:** Software Malicioso que **criptografa** (tranca) todos os seus arquivos, tornando-os inacessíveis. Os criminosos exigem um **resgate** em dinheiro para liberá-los.
+* **Como ocorre:** É geralmente entregue por um e-mail de phishing ou explorando **falhas de software** no sistema. Uma vez no sistema, ele se espalha e tranca os dados.
+* **Prejuízos:** **Perda total da operação** da empresa; grandes perdas financeiras; violação de dados confidenciais.
+* **Mitigação:** **Backup** de dados frequente e seguro (offline); **Atualizar** todos os sistemas e softwares; Ter um **software antivírus** e de detecção sempre ativo.
+
+### 3. Malware Genérico (Software Malicioso)
+
+* **O que é:** Termo geral para qualquer programa de computador feito para **danificar, explorar ou roubar** informações de um sistema.
+* **Como ocorre:** Entra no sistema quando o usuário clica em um **anexo infectado**, baixa um software pirata ou visita um site comprometido.
+* **Prejuízos:** Corrupção de arquivos, lentidão do sistema, roubo de dados e pode ser o ponto de partida para outros ataques (como o Ransomware).
+* **Mitigação:** Usar **antivírus** e *firewall*; **Instruir** usuários a baixar apenas software de fontes oficiais e confiáveis; Manter o sistema operacional **atualizado**.
+
+---
+
+### [Página 5]
+
+### 4. DDoS (Negação de Serviço Distribuída)
+
+* **O que é:** Ataque que visa **sobrecarregar** um servidor, site ou serviço online com um volume **enorme de tráfego falso** (vindo de muitos computadores controlados), fazendo-o **parar de funcionar**.
+* **Como ocorre:** Milhares de computadores controlados (chamados de *botnets*) enviam requisições simultâneas ao alvo, excedendo a capacidade do servidor.
+* **Prejuízos:** **Indisponibilidade** do serviço online; Perda de receita e dano à reputação da marca.
+* **Mitigação:** Usar **serviços de proteção** contra DDoS (provedores de mitigação); **Filtrar** o tráfego de entrada e bloquear origens suspeitas.
+
+### 5. Engenharia Social
+
+* **O que é:** **Manipulação psicológica** que convence pessoas a quebrar regras de segurança ou fornecer informações confidenciais.
+* **Como ocorre:** O criminoso se passa por um técnico, gestor ou colega para pedir uma senha, ou solicitar o acesso a uma área restrita.
+* **Prejuízos:** É a **porta de entrada** para muitos ataques, pois a falha humana anula as defesas tecnológicas.
+* **Mitigação:** **Treinamento** de conscientização de segurança (simulações de phishing e ligações); **Não compartilhar senhas** e **verificar a identidade** de quem está pedindo a informação.
+
+---
+
+### [Página 6]
+
+### 6. Injeção SQL
+
+* **O que é:** Técnica onde o criminoso **insere** código malicioso (usando a linguagem de banco de dados, SQL) em um campo de entrada de um site, como um formulário.
+* **Como ocorre:** O site não verifica adequadamente os dados que o usuário envia. O código malicioso é executado no banco de dados.
+* **Prejuízos:** O criminoso pode **roubar, alterar ou deletar** informações críticas, como dados de clientes e senhas.
+* **Mitigação:** **Validar** e **filtrar** rigorosamente todos os dados inseridos pelo usuário (a principal defesa); Usar comandos seguros no código da aplicação.
+
+### 7. Ataque de Senha (Força Bruta)
+
+* **O que é:** Ataque automatizado que tenta **adivinhar** uma senha testando milhões de combinações possíveis (letras, números e símbolos) rapidamente até acertar.
+* **Como ocorre:** Um software testa milhões de senhas em alta velocidade contra o sistema de *login*.
+* **Prejuízos:** **Acesso não autorizado** a contas. O risco é maior em senhas curtas e simples.
+* **Mitigação:** Exigir **senhas longas e complexas**; Usar **limites de tentativas** de login (bloqueio temporário); Implementar **Autenticação de Múltiplos Fatores** (2FA).
+
+---
+
+### [Página 7]
+
+### 8. Man-in-the-Middle (Homem no Meio)
+
+* **O que é:** É quando o criminoso se **coloca entre** você e um site e **intercepta** ou **modifica** a comunicação sem que elas saibam.
+* **Como ocorre:** Ocorre frequentemente em **redes Wi-Fi públicas** não seguras, onde o tráfego é facilmente redirecionado.
+* **Prejuízos:** **Roubo de informações** transmitidas, como senhas, dados de cartão de crédito e a leitura de mensagens privadas.
+* **Mitigação:** **Evitar** redes Wi-Fi públicas ou não seguras; Usar uma **VPN** (Rede Virtual Privada); Certificar-se de que os sites usam **HTTPS** (cadeado verde).
+
+### 9. Zero-Day (Dia Zero)
+
+* **O que é:** É uma **vulnerabilidade** (falha) em um software que é **desconhecida** pelo fabricante e pelo público. O ataque acontece **antes** que o desenvolvedor tenha tido **tempo para criar uma correção**.
+* **Como ocorre:** O criminoso descobre a falha e cria um código de ataque para explorá-la secretamente, antes que qualquer defesa seja conhecida.
+* **Prejuízos:** É o ataque **mais perigoso** porque não há defesa conhecida. Resulta em **invasão completa** e secreta do sistema.
+* **Mitigação:** Usar sistemas de **detecção de intrusão** que procuram comportamentos *anormais*, e não apenas ataques conhecidos; Segmentar a rede para limitar a propagação.
+
+---
+
+### [Página 8]
+
+### 10. Spyware (Programa Espião)
+
+* **O que é:** Um tipo de Software Malicioso que se instala secretamente em um computador para **monitorar** e **coletar informações** sobre o usuário.
+* **Como ocorre:** Geralmente, é instalado junto com software legítimo (pacotes de instalação) ou clicando em links maliciosos.
+* **Prejuízos:** **Monitoramento** de tudo o que você digita (registro de teclas), roubo de dados de navegação, e uso de câmera/microfone sem permissão.
+* **Mitigação:** Usar **software anti-spyware** e antivírus; **Ler** atentamente os termos de instalação de softwares gratuitos; **Manter o sistema operacional e apps atualizados**.
+
+### 11. Cross-Site Scripting (XSS)
+
+* **O que é:** É quando o criminoso insere um **código malicioso** (geralmente JavaScript) em um **site legítimo**. Esse código é executado no navegador de outros usuários que visitam a página.
+* **Como ocorre:** O site não filtra adequadamente os dados de entrada de um usuário, permitindo que o código seja salvo e exibido para todos os visitantes.
+* **Prejuízos:** O criminoso pode **roubar cookies** (informações de sessão que mantêm o usuário logado), roubar dados exibidos na página ou **redirecionar** o usuário para sites maliciosos.
+* **Mitigação:** **Validar** todos os dados de entrada e **filtrar** o que é exibido no site, bloqueando códigos (como `<script>`) inseridos pelo usuário.
+
+---
+
+### [Página 9]
+
+## [FINALIZAÇÃO] 🚀
+
+Parabéns! Você concluiu a leitura dos conceitos básicos sobre as ameaças mais cruciais e, o mais importante, **as defesas** que você deve conhecer como Analista de Cibersegurança.
+
+Este guia é apenas o começo.
+
+Na linha de frente da segurança cibernética, o aprendizado é **contínuo**. Não basta saber o que é uma ameaça, mas sim **como ela evolui**, **como detectá-la** (usando *logs* e ferramentas de monitoramento) e, o mais importante, **como contê-la**.
+
+**Próximo Passo:**
+
+* Busque informações sobre **Táticas, Técnicas e Procedimentos (TTPs)**, que são as formas detalhadas de como os ataques são executados.
+* Estude as **contramedidas** específicas para cada tipo de ataque (como o uso de *firewalls*, VPNs, e autenticação de múltiplos fatores).
+
+Mantenha-se **curioso** e **vigilante**. A segurança do ambiente depende da sua atenção aos detalhes!
+
+---
+
+Você gostaria que eu transformasse este conteúdo em um formato que facilite a leitura, como uma tabela para cada ameaça?
